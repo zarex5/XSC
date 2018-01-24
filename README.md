@@ -1,40 +1,40 @@
-![XSC Logo](http://i.llegrand.fr/XSC.png)
+![XSCoin Logo](https://camo.githubusercontent.com/2c5fa8b8d5ee6f9482e1ca9baa2110747005bd13/687474703a2f2f692e6c6c656772616e642e66722f5853432e706e67) | XSCoin (XSC) |
+|--|--|
+|  Algorithm| CryptoNight - Proof of Work |
+| Based on | CryptoNote, Bytecoin fork |
+| Block target time | 1 minute (60s)|
+| Confirmations | 5 |
+| Reward| 0.01 XSC /block  |
+| Supply | 0.01 x 60 x 24 x 365 = 5256 /year |
+| Max supply | 525600 XSC|
+| Fees | 0.00000001 XSC|
 
-## Building XSCoin
+Objectives:
+- Fast transactions, any transaction is completed in less than 5 minutes
+- Very low fees, which should not exceed 0.00000001 XSC
+- Of course untraceable payments and unlinkable transactions
 
-### On *nix
+## Wallet
+ - You can download the **GUI wallet** [here](test). 
+ ![GUI wallet screen](https://image.noelshack.com/fichiers/2018/04/3/1516819617-3.png)
+When you'll lauch the program for the first time, an address will be created. You can find it in the *Receive* tab. If you want to use another address, you can do it in File > Open wallet
 
-Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
+- If you prefer, you can also download the **simple wallet (CLI)** [here](test). 
+![Simple wallet screen](https://image.noelshack.com/fichiers/2018/04/3/1516819617-1.png)
+Simply press G to generate a new wallet, enter a name (ex: mywallet) then a password. Your address will be displayed, and you can type *address* to show it again. Type *help* to see all the commands available.
+> Note : The daemon must be running in order to use the CLI wallet.
 
-You may download them from:
+## Mining
+ - The **daemon** is downloadable [here](test). 
+ ![Daemon screen](https://image.noelshack.com/fichiers/2018/04/3/1516819617-2.png)
+Wait a few seconds for the daemon to start.
+You can start mining with *start_mining < addr>*, < addr> beeing the address you previously created with one of the previously wallets.
+ Like always, type *help* to see all the commands available.
+ 
+ - Pools: *Comming soon*
 
-* http://gcc.gnu.org/
-* http://www.cmake.org/
-* http://www.boost.org/
-* Alternatively, it may be possible to install them using a package manager.
-
-To build, change to a directory where this file is located, and run `make`. The resulting executables can be found in `build/release/src`.
-
-**Advanced options:**
-
-* Parallel build: run `make -j<number of threads>` instead of `make`.
-* Debug build: run `make build-debug`.
-* Test suite: run `make test-release` to run tests in addition to building. Running `make test-debug` will do the same to the debug version.
-* Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
-
-### On Windows
-Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may download them from:
-
-* http://www.microsoft.com/
-* http://www.cmake.org/
-* http://www.boost.org/
-
-To build, change to a directory where this file is located, and run theas commands: 
-```
-mkdir build
-cd build
-cmake -G "Visual Studio 12 Win64" ..
-```
-
-And then do Build.
-Good luck!
+## Todo
+ - GUI wallet customization
+ - Mining Pool setup
+ - Try to get the coin added on exchanges
+ - Website or/and Telegram
