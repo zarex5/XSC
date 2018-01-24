@@ -1,0 +1,6 @@
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/rebuild_cache.dir
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/xscoin.dir
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/edit_cache.dir
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/cryptonote.dir
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/xscoin_automoc.dir
+/home/lucas/Bureau/coin/GUIwallet/build/CMakeFiles/cryptonote_automoc.dir

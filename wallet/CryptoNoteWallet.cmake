@@ -1,0 +1,4 @@
+
+set(CN_PROJECT_NAME "xscoin")
+set(CN_CURRENCY_DISPLAY_NAME "XSCoin")
+set(CN_CURRENCY_TICKER "XSC")
